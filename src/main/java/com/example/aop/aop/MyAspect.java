@@ -8,6 +8,12 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Modifier;
 
+/**
+ * aop说白了就是动态代理的封装，底层使用的也是动态代理
+ *  先确定一个切面，表示要增加的那些方法，
+ *  然后提供before、after、AfterReturning、AfterThrowing五个方法，是单独每个位置进行增强
+ *  Around最强大，基本和动态代理一样，手动执行原方法，这样先后顺序以及参数返回或增加都灵活修改
+ */
 @Slf4j
 @Aspect
 @Component
