@@ -1,10 +1,9 @@
 package com.example.aop.controller;
 
+import com.example.aop.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @Author: 曾睿
@@ -15,9 +14,16 @@ class UserControllerTest {
 
     @Autowired
     UserController userController;
+    @Autowired
+    UserService service;
 
     @Test
     void getUser() {
         System.out.println(userController.getUser());
+    }
+
+    @Test
+    void getUser2() {
+        System.out.println(service.sss());
     }
 }
