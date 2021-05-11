@@ -28,7 +28,7 @@ public class DocumentDemo extends A{
         boolean b=clazz.isAnnotationPresent(DocumentA.class);
         System.out.println("b:"+b);
 
-        /**
+        /*
          * 执行结果:
          A:@com.zejian.annotationdemo.DocumentA()
          an:[@com.zejian.annotationdemo.DocumentA(), @com.zejian.annotationdemo.DocumentB()]
